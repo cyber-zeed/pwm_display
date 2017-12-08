@@ -63,7 +63,7 @@ void loop()
  
    switch (lcd_key){               // depending on which button was pushed, we perform an action
  
-       case btnRIGHT:{             //  push button "RIGHT" and show the word on the screen
+       case btnRIGHT:{             
           lcd.clear();
           //lcd.setCursor(8,0);
           pwm_duty = 100;
@@ -88,7 +88,7 @@ void loop()
              pwm_duty += 5;
              if(pwm_duty > 100) pwm_duty = 100;
              power = map(pwm_duty, 0, 100, 0, 255);
-             lcd.print("+5% Duty");  //  push button "UP" and show the word on the screen
+             lcd.print("+5% Duty");  
              delay (100);
              lcd.clear();
              break;
@@ -98,7 +98,7 @@ void loop()
              pwm_duty -= 5;
              if(pwm_duty < 0)   pwm_duty = 0;
              power = map(pwm_duty, 0, 100, 0, 255);
-             lcd.print("-5% Duty");  //  push button "DOWN" and show the word on the screen
+             lcd.print("-5% Duty");  
              delay (100);
              lcd.clear();
              break;
