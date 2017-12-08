@@ -4,7 +4,6 @@
 #include <Wire.h>
 #include <LiquidCrystal.h>
 
-// Inicializa o display no endereco 0x27
 LiquidCrystal lcd(8, 9, 4, 5, 6, 7);
 int pwmpin = 11; //The N-Channel MOSFET is on digital pin 3
 int pwm_duty = 0; //Power level fro 0 to 100%
@@ -50,8 +49,8 @@ int read_LCD_buttons(){               // read the buttons
 void setup()
 {
 //TCCR0B = TCCR0B & 0b11111000 | 0x02;
-TCCR1B = TCCR1B & 0b11111000 | 0x02;
-TCCR2B = TCCR2B & 0b11111000 | 0x02; 
+//TCCR1B = TCCR1B & 0b11111000 | 0x02;
+//TCCR2B = TCCR2B & 0b11111000 | 0x02; 
 //TCCR3B = TCCR3B & 0b11111000 | 0x02;
  lcd.begin (16,2);
  Serial.begin(9600);
@@ -156,7 +155,5 @@ analogWrite(pwmpin, power); //Write this new value out to the port
 
 
 }
-  //delay(10);
-  //lcd.setBacklight(LOW);
-  //delay(10);
+
 
