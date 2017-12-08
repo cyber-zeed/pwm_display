@@ -1,5 +1,5 @@
 // Programa : Display LCD 16x2 e modulo I2C
-// Autor : Arduino e Cia
+// Autor : Flavio Lira
 
 #include <Wire.h>
 #include <LiquidCrystal.h>
