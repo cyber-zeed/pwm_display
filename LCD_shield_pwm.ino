@@ -5,7 +5,7 @@
 #include <LiquidCrystal.h>
 
 LiquidCrystal lcd(8, 9, 4, 5, 6, 7);
-int pwmpin = 11; //The N-Channel MOSFET is on digital pin 3
+int pwmpin = 11; //The N-Channel MOSFET is on digital pin 11
 int pwm_duty = 0; //Power level fro 0 to 100%
 int power = map(power, 0, 100, 0, 255); //This is a value from 0 to 255 that actually controls the MOSFET 
 int lcd_key     = 0;
