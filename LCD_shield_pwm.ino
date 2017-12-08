@@ -1,4 +1,4 @@
-// Programa : Display LCD 16x2 e modulo I2C
+// Programa : Simple Variable PWM for Arduino
 // Autor : Flavio Lira
 
 #include <Wire.h>
